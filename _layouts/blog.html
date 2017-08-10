@@ -24,48 +24,24 @@
       <div class="sidebar" id="sidebar">
         <div class="header">
           <h1 class="title"><a href="/"><img id="logo" src="/images/Derek_Suit.jpg"></a></h1>
-            <span class="tagline">Derek Driggs<br><br>Graduate Student<br><br>Dept. of Applied Mathematics<br><br>University of Colorado Boulder</span>
+          <span class="tagline">Derek Driggs<br><br>Incoming PhD Student and Gates Cambridge Scholar<br><br>Cambridge Centre for Analysis<br><br>CCIMI<br><br>University of Cambridge</span>
         </div>
         <div class="posts">
           <ul class="posts-list">
+            {% for post in site.posts %}
               <li class="post-link">
-                <a class="post-title" href="https://www.google.com">
-                   research
+                <a class="post-title" href="{{ post.url }}">
+                  <span class="post-date">{{ post.date | date_to_string }}</span>
+                  {{ post.title }}
                 </a>
               </li>
-          </ul>
-        </div>
-        <div class="posts">
-          <ul class="posts-list">
-              <li class="post-link">
-                <a class="post-title" href="https://www.google.com">
-                   publications
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div class="posts">
-          <ul class="posts-list">
-              <li class="post-link">
-                <a class="post-title" href="https://www.google.com">
-                   teaching
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div class="posts">
-          <ul class="posts-list">
-              <li class="post-link">
-                <a class="post-title" href="https://www.google.com">
-                   posts
-                </a>
-              </li>
+            {% endfor %}
           </ul>
         </div>
         <div class="footer">
           <span id="footer-links">
-            <a href="" class="footer-link">About</a> <span class="separator">&bull;</span>
-            <a href="" class="footer-link">GitHub</a>
+            <a href="https://derekdriggs.github.io" class="footer-link">Home</a> <span class="separator">&bull;</span>
+            <a href="https://github.com/derekdriggs" class="footer-link">GitHub</a>
           </span>
         </div>
       </div>
