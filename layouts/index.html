@@ -1,0 +1,60 @@
+{{ define "main" }}
+  {{ partial "header" . }}
+
+  <style>
+    ul li { margin-bottom: 20px; }
+  </style>
+
+  <section id="about">
+    <!-- <div class="panel"> -->
+      <!-- <div class="panel"> -->
+        <div class="container">
+          <div class="avatar mb-5">
+            <img class="rounded-circle" src="{{ .Site.Params.avatar }}" alt="Responsive image">
+          </div>
+          {{ .Content }}
+        </div>
+        <div class="test">
+          <h1><b>About Me</b></h1>
+          <h4>I am interested in machine learning algorithms for imaging processing. Most of my research is in creating optimization algorithms to solve large-scale machine learning and imaging problems efficiently.</h4>
+          <!-- <br> -->
+          <h4>In my most recent projects, I have been developing machine learning algorithms to help clinicians interpret radiographs. I am particularly interested in bridging the gap between academic models and models that can be safely deployed in the clinic.</h4>
+          <!-- <br> -->
+          <h4>In March 2020, our research group helped found the <a href="https://covid19ai.maths.cam.ac.uk/home">AIX-COVNET collaboration</a>, an international group of researchers developing machine learning models to aid clinicians during the COVID-19 pandemic. Check out our recently released <a href="https://gohugo.io/">papers</a>.</h4>
+        </div>
+      <!-- </div> -->
+      <!-- <h1><b>News</b></h1>
+      <h4>
+        In March 2020, our research group helped found the <a href="https://covid19ai.maths.cam.ac.uk/home">AIX-COVNET collaboration</a>, an international group of researchers developing machine learning models to aid clinicians during the COVID-19 pandemic. Check out our recently released <a href="https://gohugo.io/">papers</a>.
+        <ul>
+          <li>Example 1</li>
+          <li>Example 2</li>
+          <li>Example 3</li>
+        </ul>
+      </h4> -->
+      <div class="panel">
+        <h1><b>News</b></h1>
+        <h4>
+          <ul>
+            <li>23 Mar. 2021: <a href="https://venturebeat.com/2021/03/23/major-flaws-found-in-machine-learning-for-covid-19-diagnosis/">VentureBeat</a> has published an article about our <a href="https://www.nature.com/articles/s42256-021-00307-0">review</a>.</li>
+            <li>15 Mar. 2021: My <a href="https://www.nature.com/articles/s42256-021-00307-0">paper</a> with AIX-COVNET, "Common pitfalls and recommendations for using machine learning to detect and prognosticate for COVID-19 using chest radiographs and CT scans," has been published in <em>Nature Machine Intelligence</em>.</li>
+            <li>3 Mar. 2021: My intived editorial with AIX-COVNET, "Machine learning for COVID-19 diagnosis and prognostication: lessons for amplifying the signal whilst reducing the noise," will appear in <em>Radiology: Artificial Intelligence</em>.</li>
+            <li>30 Oct. 2020: I will (virtually) be at the Artificial Intelligence in Clinical Imaging conference, presenting my work with AIX-COVNET.</li>
+            <li>July 2020: I will (virtually) be at the SIAM Imaging Sciences conference, presenting my work on stochastic optimization.</li>
+            <li>15 Sept. 2020: My <a href=https://link.springer.com/article/10.1007/s10107-020-01566-2#citeas>paper</a> with Dr Matthias Ehrhardt and Prof. Carola-Bibiane Sch&ouml;nlieb, "Accelerating variance-reduced stochastic gradient methods," has been published in <em>Mathematical Programming</em>.</li>
+            <li>Summer 2020: I will be a quantitative research intern at G-Research, improving the numeracy of natural language processing algorithms.
+            <li>Dec. 2019: I will be at the Conference on Decision and Control in Nice, presenting my <a href="https://ieeexplore.ieee.org/document/9029387">work</a> with Dr Hamza Fawzi.</li>
+            <li>Aug. 2019: I will be at ICCOPT in Berlin, presenting my work with Dr Matthias Ehrhardt and Prof. Carola-Bibiane Sch&ouml;nlieb.</li>
+            <li>31 July 2019: My paper with Dr Hamza Fawzi entitled <a href="https://ieeexplore.ieee.org/document/9029387">"AnySOS: An anytime algorithm for semidefinite programming"</a> has been accepted by the Conference on Decision and Control. Find the code on my <a href="https://github.com/derekdriggs">GitHub page</a>. </li>
+            <li>July 2019: I will be at the Biennial Numerical Analysis Conference in Glasgow, presenting my work with Dr Jingwei Liang, Dr Matthias Ehrhardt, and Prof. Carola Sch&ouml;nlieb on stochastic optimization.
+            <li>30 Jan. 2019: My paper with Dr Stephen Becker and Dr Jordan Boyd-Graber on Tensor RPCA is now available on <a href="https://arxiv.org/pdf/1901.10991.pdf">arXiv</a>. </li>
+            <li>1 Jan. 2019: My paper with Dr Stephen Becker and Dr Aleksandr Aravkin on solving low-rank models using parallel architectures has been published in <a href="https://epubs.siam.org/doi/abs/10.1137/17M1147342">SIAM J. Sci. Comput.</a> </li>
+            <li>1 Oct. 2017: Started my PhD with Prof. Carola Sch&ouml;nlieb and Dr Hamza Fawzi at the University of Cambridge. </li>
+            <li>7 May 2017: Graduated from CU Boulder with a BS/MS in Applied Mathematics!</li>
+          </ul>
+        </h4>
+      </div>
+      {{ partial "social.html" . }}
+    <!-- </div> -->
+  </section>
+{{ end }}
